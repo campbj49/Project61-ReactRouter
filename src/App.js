@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
 
@@ -12,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<VendingMachine/>} />
-        <Route path="/food/:name" element={<Food/>} />
+        <Route path="/:name" element={<Food/>} />
       </Routes>
     </BrowserRouter>
     </div>
